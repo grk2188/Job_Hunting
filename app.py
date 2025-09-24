@@ -29,7 +29,7 @@ JOBS = [{
 def home():
   return render_template('home.html', jobs=JOBS)
 
-@@app.route('/api/jobs')
+@app.route('/api/jobs')
 def list_jobs():
     return jsonify(JOBS)
 
