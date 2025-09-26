@@ -20,6 +20,7 @@
     
   </head>
   <body>
+    {% include 'nav.html' %}
     <div class = "container">
       <h1 class= "text-center mt-2 mb-4"> Jovian Careers</h1>
       <img class= "img-fluid" id = "banner" src="static/banner.jpg">
@@ -33,9 +34,11 @@
           {% include 'jobitem.html' %}
         {% endfor %}
       </div>
+    </br>
       <div class= "text-center"> 
         <button class="btn btn-primary btn-lg"> Contact Us </button>
       </div>
+      {% include 'footer.html' %}
     </div>
   </body>
 
